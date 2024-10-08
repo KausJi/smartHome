@@ -10,7 +10,7 @@ const led_desc_t led0 =
     .port = GPIOA,
 };
 
-void borad_lowlevel_init(void)
+void board_lowlevel_init(void)
 {
     //NVIC_SetPriorityGrouping(NVIC_PriorityGroup_4);
 

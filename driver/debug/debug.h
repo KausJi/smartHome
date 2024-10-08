@@ -1,16 +1,20 @@
-#ifndef __DEBUG_H
-#define __DEBUG_H
-
+#ifndef  __DEBUG_H
+#define  __DEBUG_H
 
 #include <stdint.h>
+#include <stdio.h>
+#include <stdbool.h>
 
 
-typedef void (*uart_rx_callback_t)(uint8_t data);
+#if defined (STM32F10X_HD)
+    #include "stm32f10x.h"
+#else
+    #error drv_timer.h: No processor defined!
+#endif
 
 
-void uart_init(void);
-void uart_send(uint8_t data);
-void uart_recv_callback_register(uart_rx_callback_t cb);
+/* �û�API */
+int MH_DebugInit(uint32_t baud_rate);
 
 
 #endif /* __DEBUG_H */

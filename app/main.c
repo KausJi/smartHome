@@ -3,16 +3,18 @@
 
 int main(void)
 {
-    borad_lowlevel_init();
-    uart_init();
+    board_lowlevel_init();
+    MH_DebugInit(115200);
     OLED_Init();
     led_init(&led0);
-
+    
+    printf("start\r\n");
 
     while(1)
     {
         led_on(&led0);
         OLED_ShowChar(1, 1, 'a');
+        
     }
 }
  
