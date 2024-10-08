@@ -5,6 +5,8 @@
 #include "stm32f10x.h"
 #include "stm32f10x_usart.h"
 
+static uart_rx_callback_t rx_callback;
+
 static void uart_pin_init(void)
 {
     GPIO_InitTypeDef GPIO_InitStructure;
@@ -50,4 +52,26 @@ void uart_init(void)
     uart_pin_init();
     uart_lowlevel_init();
     urat_irq_init();
+}
+
+void uart_send(uint8_t data)
+{
+    USART_SendData(USART1, data);
+    while (USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET);
+}
+
+void uart_recv_callback_register(uart_rx_callback_t cb)
+{
+    rx_callback = cb;
+}
+
+void USART1_IRQHandler(void)
+{
+    if (USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)
+    {
+        uint8_t data = USART_ReceiveData(USART1);
+        if (rx_callback)
+            rx_callback(data);
+        USART_ClearITPendingBit(USART1, USART_IT_RXNE);
+    }
 }

@@ -11,6 +11,7 @@
 #include "board.h"
 #include "led.h"
 #include "oled.h"
+#include "debug.h"
 
 //组件头文件
 #include "FreeRTOS.h"

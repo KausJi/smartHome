@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER,STM32F10X_HD</Define>
               <Undefine></Undefine>
-              <IncludePath>..\app\inc;..\fireware\cmsis\core;..\fireware\cmsis\device;..\fireware\driver\inc;..\driver\led;..\driver\oled;..\third_lib\freertos\include;..\third_lib\freertos\portable\MemMang;..\third_lib\freertos\portable\RVDS\ARM_CM3;..\third_lib\mqtt\platform\FreeRTOS;..\third_lib\mqtt\mqttclient;..\third_lib\mqtt\network;..\third_lib\mqtt\mqtt;..\third_lib\mqtt\common;..\third_lib\mqtt\common\PLOOC</IncludePath>
+              <IncludePath>..\app\inc;..\fireware\cmsis\core;..\fireware\cmsis\device;..\fireware\driver\inc;..\driver\led;..\driver\oled;..\driver\debug;..\third_lib\freertos\include;..\third_lib\freertos\portable\MemMang;..\third_lib\freertos\portable\RVDS\ARM_CM3;..\third_lib\mqtt\platform\FreeRTOS;..\third_lib\mqtt\mqttclient;..\third_lib\mqtt\network;..\third_lib\mqtt\mqtt;..\third_lib\mqtt\common;..\third_lib\mqtt\common\PLOOC</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -412,6 +412,11 @@
               <FileName>led.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\driver\led\led.c</FilePath>
+            </File>
+            <File>
+              <FileName>debug.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\driver\debug\debug.c</FilePath>
             </File>
           </Files>
         </Group>
