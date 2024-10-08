@@ -1,0 +1,31 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "cStandard": "c99",
+            "compilerPath": "E:/mingw64/bin/gcc.exe",
+            "cppStandard": "c++11",
+            "defines": [
+                "STM32F10X_HD",
+                "USE_STDPERIPH_DRIVER"
+            ],
+            "includePath": [
+                "app/inc",
+                "driver/**",
+                "fireware/cmsis/core",
+                "fireware/cmsis/device",
+                "fireware/driver/inc",
+                "third_lib/freertos/include",
+                "third_lib/freertos/portable/RVDS/ARM_CM3",
+                "third_lib/mqtt/**",
+                "third_lib/ringbuffer",
+                "third_lib/mqtt/network"
+            ],
+            "intelliSenseMode": "windows-gcc-arm",
+            "name": "stm32f103"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,14 @@
+.\objects\board.o: ..\app\board.c
+.\objects\board.o: ..\app\inc\board.h
+.\objects\board.o: ..\driver\led\led.h
+.\objects\board.o: E:\keil\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\board.o: E:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\board.o: E:\keil\ARM\ARMCC\Bin\..\include\string.h
+.\objects\board.o: ..\fireware\cmsis\device\stm32f10x.h
+.\objects\board.o: ..\fireware\cmsis\core\core_cm3.h
+.\objects\board.o: ..\fireware\cmsis\device\system_stm32f10x.h
+.\objects\board.o: ..\fireware\cmsis\device\stm32f10x_conf.h
+.\objects\board.o: ..\fireware\driver\inc\stm32f10x_gpio.h
+.\objects\board.o: ..\fireware\cmsis\device\stm32f10x.h
+.\objects\board.o: ..\fireware\driver\inc\stm32f10x_rcc.h
+.\objects\board.o: ..\fireware\driver\inc\misc.h

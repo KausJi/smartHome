@@ -1,0 +1,15 @@
+.\objects\random.o: ..\third_lib\mqtt\common\random.c
+.\objects\random.o: E:\keil\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\random.o: ..\third_lib\mqtt\common\random.h
+.\objects\random.o: ..\third_lib\mqtt\platform\FreeRTOS\platform_timer.h
+.\objects\random.o: ..\third_lib\freertos\include\FreeRTOS.h
+.\objects\random.o: E:\keil\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\random.o: E:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\random.o: ..\app\inc\FreeRTOSConfig.h
+.\objects\random.o: ..\third_lib\freertos\include\projdefs.h
+.\objects\random.o: ..\third_lib\freertos\include\portable.h
+.\objects\random.o: ..\third_lib\freertos\include\deprecated_definitions.h
+.\objects\random.o: ..\third_lib\freertos\portable\RVDS\ARM_CM3\portmacro.h
+.\objects\random.o: ..\third_lib\freertos\include\mpu_wrappers.h
+.\objects\random.o: ..\third_lib\mqtt\platform\FreeRTOS\platform_memory.h
+.\objects\random.o: E:\keil\ARM\ARMCC\Bin\..\include\stdio.h

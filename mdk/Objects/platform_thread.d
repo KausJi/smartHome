@@ -1,0 +1,16 @@
+.\objects\platform_thread.o: ..\third_lib\mqtt\platform\FreeRTOS\platform_thread.c
+.\objects\platform_thread.o: ..\third_lib\mqtt\platform\FreeRTOS\platform_thread.h
+.\objects\platform_thread.o: ..\third_lib\freertos\include\FreeRTOS.h
+.\objects\platform_thread.o: E:\keil\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\platform_thread.o: E:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\platform_thread.o: ..\app\inc\FreeRTOSConfig.h
+.\objects\platform_thread.o: ..\third_lib\freertos\include\projdefs.h
+.\objects\platform_thread.o: ..\third_lib\freertos\include\portable.h
+.\objects\platform_thread.o: ..\third_lib\freertos\include\deprecated_definitions.h
+.\objects\platform_thread.o: ..\third_lib\freertos\portable\RVDS\ARM_CM3\portmacro.h
+.\objects\platform_thread.o: ..\third_lib\freertos\include\mpu_wrappers.h
+.\objects\platform_thread.o: ..\third_lib\freertos\include\task.h
+.\objects\platform_thread.o: ..\third_lib\freertos\include\list.h
+.\objects\platform_thread.o: ..\third_lib\mqtt\platform\FreeRTOS\platform_memory.h
+.\objects\platform_thread.o: E:\keil\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\platform_thread.o: E:\keil\ARM\ARMCC\Bin\..\include\stdio.h

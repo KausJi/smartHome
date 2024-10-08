@@ -1,0 +1,13 @@
+.\objects\platform_timer.o: ..\third_lib\mqtt\platform\FreeRTOS\platform_timer.c
+.\objects\platform_timer.o: ..\third_lib\mqtt\platform\FreeRTOS\platform_timer.h
+.\objects\platform_timer.o: ..\third_lib\freertos\include\FreeRTOS.h
+.\objects\platform_timer.o: E:\keil\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\platform_timer.o: E:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\platform_timer.o: ..\app\inc\FreeRTOSConfig.h
+.\objects\platform_timer.o: ..\third_lib\freertos\include\projdefs.h
+.\objects\platform_timer.o: ..\third_lib\freertos\include\portable.h
+.\objects\platform_timer.o: ..\third_lib\freertos\include\deprecated_definitions.h
+.\objects\platform_timer.o: ..\third_lib\freertos\portable\RVDS\ARM_CM3\portmacro.h
+.\objects\platform_timer.o: ..\third_lib\freertos\include\mpu_wrappers.h
+.\objects\platform_timer.o: ..\third_lib\freertos\include\task.h
+.\objects\platform_timer.o: ..\third_lib\freertos\include\list.h
