@@ -4,7 +4,7 @@
 int main(void)
 {
     board_lowlevel_init();
-    MH_DebugInit(115200);
+    DebugInit(115200);
     OLED_Init();
     led_init(&led0);
     
