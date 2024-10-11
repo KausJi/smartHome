@@ -11,5 +11,8 @@
     #error drv_timer.h: No processor defined!
 #endif
 
+void driver_uart(void);
+void uart3_senddata(char *data, char length);
+
 
 #endif /* __DRIVER_UART_H */
