@@ -5,12 +5,17 @@ int main(void)
 {
     board_lowlevel_init();
     DebugInit(115200);
-    OLED_Init();
-    led_init(&led0);
-    uart3_lock_init();
-    
     printf("start\r\n");
 
+
+    OLED_Init();
+    led_init(&led0);
+
+    driver_uart3_init();
+    uart3_lock_init();
+    uart3_senddata("AT\r\n", 4);
+    
+    
     while(1)
     {
         led_on(&led0);

@@ -4,7 +4,7 @@
 static ringbuffer8_t rxrb;
 static uint8_t rx_buff[128];
 
-void driver_uart(void)
+void driver_uart3_init(void)
 {
     GPIO_InitTypeDef GPIO_InitStructure;
     USART_InitTypeDef USART_InitStructure;
