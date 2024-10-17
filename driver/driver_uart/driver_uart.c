@@ -1,6 +1,9 @@
 #include "driver_uart.h"
 #include "stm32f10x_usart.h"
 
+static ringbuffer8_t rxrb;
+static uint8_t rx_buff[128];
+
 void driver_uart(void)
 {
     GPIO_InitTypeDef GPIO_InitStructure;
@@ -41,7 +44,7 @@ void driver_uart(void)
 //发送一个字节
 static void uart3_sendbyte(char data)
 {
-    while((USART3->SR & 0x40) == 0);
+    while((USART3->SR & USART_SR_TXE) == 0); //等待发送完
     USART3->DR = (uint8_t)data;
 }
 
@@ -52,4 +55,24 @@ void uart3_senddata(char *data, char length)
     {
         uart3_sendbyte(data[i]);
     }
+}
+
+//串口中断
+void USART3_IRQHandler(void)
+{
+    /* 如果发生的是RX中断，把数据读出来，存入ringbuffer*/
+    char c;
+
+    /* UART in mode Receiver */
+    if (((USART3->SR & USART_SR_RXNE) != RESET) && ((USART3->CR1 & USART_CR1_RXNEIE) != RESET))
+    {
+        c = USART3->DR;
+        rb8_put(rxrb, c);
+        return;
+    } 
+}
+
+void uart3_lock_init(void)
+{
+    rxrb = rb8_new(rx_buff, sizeof(rx_buff));
 }

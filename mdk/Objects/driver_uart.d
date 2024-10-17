@@ -1,0 +1,15 @@
+.\objects\driver_uart.o: ..\driver\driver_uart\driver_uart.c
+.\objects\driver_uart.o: ..\driver\driver_uart\driver_uart.h
+.\objects\driver_uart.o: E:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\driver_uart.o: E:\keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\driver_uart.o: E:\keil\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\driver_uart.o: ..\third_lib\ringbuffer\ringbuffer8.h
+.\objects\driver_uart.o: ..\fireware\cmsis\device\stm32f10x.h
+.\objects\driver_uart.o: ..\fireware\cmsis\core\core_cm3.h
+.\objects\driver_uart.o: ..\fireware\cmsis\device\system_stm32f10x.h
+.\objects\driver_uart.o: ..\fireware\cmsis\device\stm32f10x_conf.h
+.\objects\driver_uart.o: ..\fireware\driver\inc\stm32f10x_gpio.h
+.\objects\driver_uart.o: ..\fireware\cmsis\device\stm32f10x.h
+.\objects\driver_uart.o: ..\fireware\driver\inc\stm32f10x_rcc.h
+.\objects\driver_uart.o: ..\fireware\driver\inc\misc.h
+.\objects\driver_uart.o: ..\fireware\driver\inc\stm32f10x_usart.h

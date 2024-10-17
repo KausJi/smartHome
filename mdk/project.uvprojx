@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER,STM32F10X_HD</Define>
               <Undefine></Undefine>
-              <IncludePath>..\app\inc;..\fireware\cmsis\core;..\fireware\cmsis\device;..\fireware\driver\inc;..\driver\led;..\driver\oled;..\driver\debug;..\third_lib\freertos\include;..\third_lib\freertos\portable\MemMang;..\third_lib\freertos\portable\RVDS\ARM_CM3;..\third_lib\mqtt\platform\FreeRTOS;..\third_lib\mqtt\mqttclient;..\third_lib\mqtt\network;..\third_lib\mqtt\mqtt;..\third_lib\mqtt\common;..\third_lib\mqtt\common\PLOOC</IncludePath>
+              <IncludePath>..\app\inc;..\fireware\cmsis\core;..\fireware\cmsis\device;..\fireware\driver\inc;..\driver\led;..\driver\oled;..\driver\debug;..\driver\driver_uart;..\third_lib\freertos\include;..\third_lib\freertos\portable\MemMang;..\third_lib\freertos\portable\RVDS\ARM_CM3;..\third_lib\mqtt\platform\FreeRTOS;..\third_lib\mqtt\mqttclient;..\third_lib\mqtt\network;..\third_lib\mqtt\mqtt;..\third_lib\mqtt\common;..\third_lib\mqtt\common\PLOOC;..\third_lib\ringbuffer</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -417,6 +417,11 @@
               <FileName>debug.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\driver\debug\debug.c</FilePath>
+            </File>
+            <File>
+              <FileName>driver_uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\driver\driver_uart\driver_uart.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -662,6 +667,16 @@
               <FileName>platform_timer.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\third_lib\mqtt\platform\FreeRTOS\platform_timer.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>third_lib/ringbuffer</GroupName>
+          <Files>
+            <File>
+              <FileName>ringbuffer8.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\third_lib\ringbuffer\ringbuffer8.c</FilePath>
             </File>
           </Files>
         </Group>

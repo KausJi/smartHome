@@ -17,6 +17,8 @@
 .\objects\main.o: ..\fireware\driver\inc\misc.h
 .\objects\main.o: ..\driver\oled\oled.h
 .\objects\main.o: ..\driver\debug\debug.h
+.\objects\main.o: ..\driver\driver_uart\driver_uart.h
+.\objects\main.o: ..\third_lib\ringbuffer\ringbuffer8.h
 .\objects\main.o: ..\third_lib\freertos\include\FreeRTOS.h
 .\objects\main.o: E:\keil\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\main.o: ..\app\inc\FreeRTOSConfig.h
